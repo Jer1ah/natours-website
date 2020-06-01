@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  padding: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  height: 95vh;
+  background-color: #3ad43a;
+  position: relative;
+  padding: 0.1rem;
+}
+.header__logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.header__logo img {
+  width: 6rem;
+}
+.header__heading {
+  margin: 20rem auto 0;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.header__title h1 {
+  font-size: 4rem;
+}
+.header__title h3 {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=index.css.map */
