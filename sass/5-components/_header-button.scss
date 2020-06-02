@@ -1,0 +1,22 @@
+.header__button {
+    text-decoration: none;
+    color: $color-grey-dark-3;
+    margin: 2rem auto 0;
+    font-size: 1.2rem;
+    background-color: $color-grey-light-1;
+    display: inline-block;
+    padding: 1.33rem 2.2rem;
+    border-radius: 10rem;
+    margin-top: 5rem;
+    transition: all .15s;
+
+    &:hover {
+        transform: translateY(-.2rem);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+}

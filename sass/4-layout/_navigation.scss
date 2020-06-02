@@ -1,0 +1,23 @@
+.navigation {
+    &__button {
+        position: fixed;
+        top: 4.4rem;
+        right: 4.4rem;
+        z-index: 1000;
+        border: none;
+        background-color: $color-grey-light-1;
+        padding: 1.33rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 2rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
