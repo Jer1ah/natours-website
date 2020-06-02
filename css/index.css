@@ -60,17 +60,30 @@ body {
   z-index: 1000;
   border: none;
   background-color: #f7f7f7;
-  padding: 1.33rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 .navigation__button img {
   width: 2rem;
 }
 .navigation__button:hover {
   cursor: pointer;
+}
+.navigation__background {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 250;
+  height: 3rem;
+  width: 3rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  border-radius: 50%;
+  transition: all 0.85s;
 }
 
 .header__button {

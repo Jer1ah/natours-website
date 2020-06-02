@@ -6,11 +6,13 @@
         z-index: 1000;
         border: none;
         background-color: $color-grey-light-1;
-        padding: 1.33rem;
+        height: 4.5rem;
+        width: 4.5rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        outline: none;
 
         img {
             width: 2rem;
@@ -19,5 +21,17 @@
         &:hover {
             cursor: pointer;
         }
+    }
+
+    &__background {
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        z-index: 250;
+        height: 3rem;
+        width: 3rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        border-radius: 50%;
+        transition: all .85s;
     }
 }
