@@ -1,0 +1,75 @@
+.tours {
+    background-color: $color-grey-light-2;
+    margin-top: -10rem;
+    padding: .1rem;
+    @include displayFlex(column, center, flex-start);
+
+    &__heading {
+        margin-top: 17rem;
+        background: -webkit-linear-gradient(120deg, $color-primary-dark, $color-primary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    &__wrapper {
+        width: 70rem;
+        margin: 5rem auto 10rem;
+        @include displayFlex(row, flex-start, space-between);
+    }
+
+    &__info {
+        width: 35rem;
+        margin-top: 1rem;
+
+        h4 {
+            color: $color-grey-dark;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $color-grey-dark;
+            margin: 0 0 1.5rem;
+            font-size: 1rem;
+            line-height: 1.77rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 1rem;
+            font-weight: 400;
+            border-bottom: $color-primary solid .1rem;
+            padding-bottom: .3rem;
+        }
+    }
+
+    &__images {
+        width: 33rem;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        img:nth-child(1) {
+            top: 0;
+            left: 0;
+            z-index: 25;
+        }
+
+        img:nth-child(2) {
+            top: 6rem;
+            left: 7rem;
+            z-index: 20;
+        }
+
+        img:nth-child(3) {
+            top: 1.5rem;
+            right: 0;
+            z-index: 15;
+        }
+    }
+}
