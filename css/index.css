@@ -204,6 +204,24 @@ body {
   padding: 0.1rem;
 }
 
+.packages {
+  background-color: #eee;
+  padding: 0.1rem;
+  margin-top: -10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.packages__heading {
+  margin-top: 16rem;
+  background: -webkit-linear-gradient(120deg, #28b485, #7ed56f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
 .header__button {
   text-decoration: none;
   color: #333;
@@ -269,6 +287,17 @@ body {
 .info-card:hover {
   cursor: pointer;
   transform: translateY(-0.75rem);
+}
+
+.packages__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 4rem 0 7rem;
+  list-style: none;
+  padding: 0;
+  width: 65rem;
 }
 
 /*# sourceMappingURL=index.css.map */

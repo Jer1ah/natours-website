@@ -1,0 +1,7 @@
+.packages__list {
+    @include displayFlex(row, flex-start, space-between);
+    margin: 4rem 0 7rem;
+    list-style: none;
+    padding: 0;
+    width: 65rem;
+}
