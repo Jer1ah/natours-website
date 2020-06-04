@@ -201,6 +201,7 @@ body {
   background-repeat: no-repeat;
   clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
   margin-top: -10rem;
+  padding: 0.1rem;
 }
 
 .header__button {
@@ -222,6 +223,52 @@ body {
 .header__button:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.info-card__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60rem;
+  margin: 20rem auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 21%;
+  transition: all 0.3s;
+}
+.info-card__icon {
+  font-size: 3rem;
+  margin: 2rem 0 1rem;
+  background: -webkit-linear-gradient(120deg, #28b485, #7ed56f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info-card h3 {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+  text-transform: uppercase;
+}
+.info-card p {
+  font-size: 0.9rem;
+  color: #777;
+  width: 90%;
+  margin: 1rem 0 1.5rem;
+  line-height: 1.5rem;
+}
+.info-card:hover {
+  cursor: pointer;
+  transform: translateY(-0.75rem);
 }
 
 /*# sourceMappingURL=index.css.map */

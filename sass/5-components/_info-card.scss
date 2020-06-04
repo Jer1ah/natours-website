@@ -1,0 +1,43 @@
+.info-card__list {
+    @include displayFlex(row, flex-start, space-between);
+    width: 60rem;
+    margin: 20rem auto 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-card {
+    @include displayFlex(column, center, flex-start);
+    text-align: center;
+    background-color: rgba($color-white, .8);
+    width: 21%;
+    transition: all .3s;
+
+    &__icon {
+        font-size: 3rem;
+        margin: 2rem 0 1rem;
+        background: -webkit-linear-gradient(120deg, $color-primary-dark, $color-primary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+        font-size: .9rem;
+        color: $color-grey-dark;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: .9rem;
+        color: $color-grey-dark;
+        width: 90%;
+        margin: 1rem 0 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-.75rem);
+    }
+}
