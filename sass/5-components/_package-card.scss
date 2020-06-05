@@ -5,3 +5,87 @@
     padding: 0;
     width: 65rem;
 }
+
+.package-card {
+    max-width: 29%;
+    min-height: 27rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    background-color: $color-white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .8s;
+    text-align: center;
+
+    &__front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+
+        &-header {
+            background: linear-gradient(#ffbb008c, #ffbb0083),
+                        url("../../images/nature-image2.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 12rem;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        &-heading {
+            position: absolute;
+            top: 7rem;
+            right: 1rem;
+            z-index: 100;
+            @include displayFlex(column, flex-end, flex-end);
+
+            h3 {
+                background-color: rgba(255,185,0,0.9);
+                padding: .5rem 1rem;
+                text-transform: uppercase;
+                color: $color-white;
+                font-size: 1.33rem;
+                font-weight: 300;
+            }
+        }
+
+        &-list {
+            list-style: none;
+            padding: 0;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        &-listItem {
+            border-bottom: solid .1rem lighten($color-grey-dark-2, 35%);
+            padding: .7rem 0;
+
+            span {
+                font-size: .88rem;
+                color: $color-grey-dark-3;
+            }
+        }
+
+        &-listItem:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        background: linear-gradient(120deg, $color-secondary-light, $color-secondary-dark);
+        z-index: 1000;
+    }
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}

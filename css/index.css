@@ -300,4 +300,82 @@ body {
   width: 65rem;
 }
 
+.package-card {
+  max-width: 29%;
+  min-height: 27rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s;
+  text-align: center;
+}
+.package-card__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+.package-card__front-header {
+  background: linear-gradient(#ffbb008c, #ffbb0083), url("../../images/nature-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.package-card__front-heading {
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.package-card__front-heading h3 {
+  background-color: rgba(255, 185, 0, 0.9);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.33rem;
+  font-weight: 300;
+}
+.package-card__front-list {
+  list-style: none;
+  padding: 0;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.package-card__front-listItem {
+  border-bottom: solid 0.1rem #f2f2f2;
+  padding: 0.7rem 0;
+}
+.package-card__front-listItem span {
+  font-size: 0.88rem;
+  color: #333;
+}
+.package-card__front-listItem:last-child {
+  border-bottom: none;
+}
+.package-card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: linear-gradient(120deg, #ffb900, #ff7730);
+  z-index: 1000;
+}
+.package-card:hover {
+  transform: rotateY(180deg);
+}
+
 /*# sourceMappingURL=index.css.map */
