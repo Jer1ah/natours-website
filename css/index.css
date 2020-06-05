@@ -221,6 +221,17 @@ body {
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
 }
+.packages-button {
+  margin-bottom: 5rem;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: #55c57a;
+  text-decoration: none;
+  padding: 1.2rem 2.2rem;
+  border-radius: 10rem;
+}
 
 .header__button {
   text-decoration: none;
@@ -294,7 +305,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 4rem 0 7rem;
+  margin: 4rem 0 5rem;
   list-style: none;
   padding: 0;
   width: 65rem;
@@ -374,8 +385,53 @@ body {
   background: linear-gradient(120deg, #ffb900, #ff7730);
   z-index: 1000;
 }
+.package-card__back span {
+  display: inline-block;
+  margin-top: 7rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.package-card__back-cost {
+  font-size: 3.3rem;
+  font-weight: 200;
+  margin-top: 0.75rem;
+  color: #fff;
+}
+.package-card__back-button {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+}
 .package-card:hover {
   transform: rotateY(180deg);
+}
+
+.two .package-card__front-header {
+  background: linear-gradient(rgba(126, 213, 111, 0.7), rgba(126, 213, 111, 0.7)), url("../../images/nature-image4.jpg");
+}
+.two .package-card__front-heading h3 {
+  background-color: rgba(126, 213, 111, 0.9);
+}
+.two .package-card__back {
+  background: linear-gradient(120deg, #55c57a, #7ed56f);
+}
+
+.three .package-card__front-header {
+  background: linear-gradient(rgba(41, 152, 255, 0.7), rgba(41, 152, 255, 0.7)), url("../../images/nature-image1.jpg");
+}
+.three .package-card__front-heading h3 {
+  background-color: rgba(41, 152, 255, 0.9);
+}
+.three .package-card__back {
+  background: linear-gradient(120deg, #5643fa, #2998ff);
 }
 
 /*# sourceMappingURL=index.css.map */

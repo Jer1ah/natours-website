@@ -1,6 +1,6 @@
 .packages__list {
     @include displayFlex(row, flex-start, space-between);
-    margin: 4rem 0 7rem;
+    margin: 4rem 0 5rem;
     list-style: none;
     padding: 0;
     width: 65rem;
@@ -83,9 +83,71 @@
         transform: rotateY(180deg);
         background: linear-gradient(120deg, $color-secondary-light, $color-secondary-dark);
         z-index: 1000;
+
+        span {
+            display: inline-block;
+            margin-top: 7rem;
+            color: $color-white;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        &-cost {
+            font-size: 3.3rem;
+            font-weight: 200;
+            margin-top: .75rem;
+            color: $color-white;
+        }
+
+        &-button {
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 4rem;
+            background-color: $color-white;
+            color: $color-black;
+            font-size: .9rem;
+            font-weight: 400;
+            padding: 1rem 2.5rem;
+            border-radius: 10rem;
+            text-transform: uppercase;
+        }
     }
 
     &:hover {
         transform: rotateY(180deg);
+    }
+}
+
+.two {
+    .package-card__front-header {
+        background: linear-gradient(rgba(126,213,111,0.7),rgba(126,213,111,0.7)),
+                    url("../../images/nature-image4.jpg");    
+    }
+
+    .package-card__front-heading {
+        h3 {
+            background-color: rgba(126,213,111,0.9);
+        }
+    }
+
+    .package-card__back {
+        background: linear-gradient(120deg, $color-primary, $color-primary-light);
+    }
+}
+
+.three {
+    .package-card__front-header {
+        background: linear-gradient(rgba(41,152,255,0.7), rgba(41,152,255,0.7)),
+                    url("../../images/nature-image1.jpg");    
+    }
+
+    .package-card__front-heading {
+        h3 {
+            background-color: rgba(41,152,255,0.9);
+        }
+    }
+
+    .package-card__back {
+        background: linear-gradient(120deg, $color-tertiary-dark, $color-tertiary-light);
     }
 }
