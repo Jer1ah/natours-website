@@ -1,0 +1,27 @@
+.contact {
+    &-card {
+        background: url('../../images/nature-image4.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 65rem;
+        height: 33rem;
+        margin: 7.5rem 0;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,.5);
+    }
+
+    &__info {
+        background-color: rgba(255, 255, 255, .9);
+        height: 100%;
+        width: 55%;
+        @include displayFlex(column, flex-start, flex-start);
+        clip-path: polygon(0 0, 100% 0, 82.5% 100%, 0% 100%);
+        
+        h2 {
+            display: inline-block;
+        }
+
+        .radio-buttons {
+            display: inline-block;
+        }
+    }
+}

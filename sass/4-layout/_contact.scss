@@ -1,0 +1,4 @@
+.contact {
+    background: linear-gradient(150deg, $color-primary-light, $color-primary-dark);
+    @include displayFlex(column, center, flex-start);
+}
