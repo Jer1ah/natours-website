@@ -38,19 +38,49 @@
 
         .radio-buttons {
             @include displayFlex(row, center, space-between);
-            margin: 2rem 0 3.3rem 3rem;
+            margin: 1rem 0 3.3rem 3rem;
             width: 20rem;
         }
 
         .radio-button {
             @include displayFlex(row, center, center);
+            width: 8.5rem;
 
-            input {
-                margin-right: .5rem;
+            input[type="radio"] {
+                display: none;
+
+                &:checked ~ span:after {
+                    transform: translate(-50%, -50%) scale(1);
+                }
             }
 
             label {
                 font-size: .85rem;
+            }
+
+            span {
+                height: 1.5rem;
+                width: 1.5rem;
+                border: .25rem solid $color-primary;
+                border-radius: 50%;
+                margin-right: .5rem;
+                position: relative;
+            }
+
+            span:after {
+                content: "";
+                width: .6rem;
+                height: .6rem;
+                border-radius: 50%;
+                background: $color-primary;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0);
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }

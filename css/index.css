@@ -545,7 +545,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 0 3.3rem 3rem;
+  margin: 1rem 0 3.3rem 3rem;
   width: 20rem;
 }
 .contact__info .radio-button {
@@ -553,12 +553,38 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 8.5rem;
 }
-.contact__info .radio-button input {
-  margin-right: 0.5rem;
+.contact__info .radio-button input[type=radio] {
+  display: none;
+}
+.contact__info .radio-button input[type=radio]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
 }
 .contact__info .radio-button label {
   font-size: 0.85rem;
+}
+.contact__info .radio-button span {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.25rem solid #55c57a;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.contact__info .radio-button span:after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #55c57a;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.contact__info .radio-button:hover {
+  cursor: pointer;
 }
 .contact-button {
   margin-left: 3rem;
