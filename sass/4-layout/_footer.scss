@@ -1,0 +1,44 @@
+.footer {
+    background: $color-grey-dark-3;
+    @include displayFlex(column, center, flex-start);
+
+    &__logo {
+        margin: 5rem 0 5rem;
+    }
+
+    &__wrapper {
+        width: 65rem;
+        @include displayFlex(row, flex-start, space-between);
+        margin: 0 0 5rem;
+    }
+
+    &__list {
+        width: 40%;
+        list-style: none;
+        padding: 0;
+        border-top: solid .05rem $color-grey-dark-2;
+        padding-top: 1rem;
+        @include displayFlex(row, center, space-between);
+
+        &Item {
+            color: $color-white;
+            font-size: .7rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__info {
+        width: 40%;
+        border-top: solid .05rem $color-grey-dark-2;
+        padding-top: 1rem;
+
+        p {
+            font-size: .75rem;
+            color: $color-white;
+            line-height: 1.7rem;
+        }
+    }
+}
