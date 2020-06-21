@@ -13,6 +13,12 @@ body {
   font-family: "Lato";
 }
 
+/*-- media queries --*/
+@media (max-width: 850px) {
+  html {
+    padding: 1rem;
+  }
+}
 .header {
   width: 100%;
   height: 95vh;
@@ -53,6 +59,23 @@ body {
   letter-spacing: 0.65rem;
 }
 
+/*-- media queries --*/
+@media (max-width: 1075px) {
+  .header__title h1 {
+    font-size: 4rem;
+  }
+  .header__title h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 850px) {
+  .header__title h1 {
+    font-size: 3.4rem;
+  }
+  .header__title h3 {
+    font-size: 1.1rem;
+  }
+}
 .navigation__button {
   position: fixed;
   top: 4.4rem;
@@ -123,6 +146,13 @@ body {
   transition: all 0.33s;
 }
 
+/* media queries */
+@media (max-width: 850px) {
+  .navigation__button {
+    top: 3.1rem;
+    right: 3.3rem;
+  }
+}
 .tours {
   background-color: #eee;
   margin-top: -10rem;
@@ -352,13 +382,12 @@ body {
 .header__button {
   text-decoration: none;
   color: #333;
-  margin: 2rem auto 0;
+  margin: 5rem auto 0;
   font-size: 1.2rem;
   background-color: #f7f7f7;
   display: inline-block;
   padding: 1.33rem 2.2rem;
   border-radius: 10rem;
-  margin-top: 5rem;
   transition: all 0.15s;
 }
 .header__button:hover {
@@ -370,6 +399,17 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+/*-- media queries --*/
+@media (max-width: 1075px) {
+  .header__button {
+    margin-top: 3.3rem;
+  }
+}
+@media (max-width: 850px) {
+  .header__button {
+    padding: 1.1rem 2rem;
+  }
+}
 .info-card__list {
   display: flex;
   flex-direction: row;

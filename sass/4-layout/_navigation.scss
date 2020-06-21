@@ -77,3 +77,12 @@
         }
     }
 }
+
+
+/* media queries */
+@media( max-width: 850px ) {
+    .navigation__button {
+        top: 3.1rem;
+        right: 3.3rem;
+    }
+}

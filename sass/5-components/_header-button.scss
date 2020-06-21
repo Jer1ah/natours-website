@@ -1,13 +1,12 @@
 .header__button {
     text-decoration: none;
     color: $color-grey-dark-3;
-    margin: 2rem auto 0;
+    margin: 5rem auto 0;
     font-size: 1.2rem;
     background-color: $color-grey-light-1;
     display: inline-block;
     padding: 1.33rem 2.2rem;
     border-radius: 10rem;
-    margin-top: 5rem;
     transition: all .15s;
 
     &:hover {
@@ -18,5 +17,19 @@
     &:active {
         transform: translateY(0);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+}
+
+
+/*-- media queries --*/
+@media( max-width: 1075px ) {
+    .header__button {
+        margin-top: 3.3rem;
+    }
+}
+
+@media( max-width: 850px ) {
+    .header__button {
+        padding: 1.1rem 2rem;
     }
 }
