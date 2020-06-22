@@ -152,6 +152,11 @@ body {
     top: 3.1rem;
     right: 3.3rem;
   }
+
+  .navigation__background {
+    top: 3.75rem;
+    right: 3.5rem;
+  }
 }
 .tours {
   background-color: #eee;
@@ -169,9 +174,11 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
+  max-width: 95%;
 }
 .tours__wrapper {
   width: 70rem;
+  max-width: 95%;
   margin: 5rem auto 17rem;
   display: flex;
   flex-direction: row;
@@ -180,7 +187,9 @@ body {
 }
 .tours__info {
   width: 35rem;
+  max-width: 45%;
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 .tours__info h4 {
   color: #777;
@@ -224,6 +233,49 @@ body {
   z-index: 15;
 }
 
+/*-- media queries --*/
+@media (max-width: 950px) {
+  .tours__wrapper {
+    flex-direction: column;
+  }
+  .tours__info {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
+  .tours__images {
+    margin-bottom: 13rem;
+    width: 100%;
+  }
+  .tours__images img:nth-child(1) {
+    top: 0;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 25;
+  }
+  .tours__images img:nth-child(2) {
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+  .tours__images img:nth-child(3) {
+    top: 1.5rem;
+    left: 45%;
+    z-index: 15;
+  }
+}
+@media (max-width: 725px) {
+  .tours__images {
+    margin-bottom: 0;
+  }
+  .tours__images img {
+    width: 100%;
+    position: initial;
+    transform: translateX(0) !important;
+    margin-bottom: 2.5rem;
+  }
+}
 .info {
   height: 55rem;
   background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../images/nature-image4.jpg");

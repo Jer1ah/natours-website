@@ -11,17 +11,21 @@
         -webkit-text-fill-color: transparent;
         font-size: 2.5rem;
         letter-spacing: .1rem;
+        max-width: 95%;
     }
 
     &__wrapper {
         width: 70rem;
+        max-width: 95%;
         margin: 5rem auto 17rem;
         @include displayFlex(row, flex-start, space-between);
     }
 
     &__info {
         width: 35rem;
+        max-width: 45%;
         margin-top: 1rem;
+        margin-right: 1rem;
 
         h4 {
             color: $color-grey-dark;
@@ -70,6 +74,60 @@
             top: 1.5rem;
             right: 0;
             z-index: 15;
+        }
+    }
+}
+
+
+/*-- media queries --*/
+@media( max-width: 950px ) {
+    .tours {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 5rem;
+        }
+
+        &__images {
+            margin-bottom: 13rem;
+            width: 100%;
+
+            img:nth-child(1) {
+                top: 0;
+                left: 35%;
+                transform: translateX(-50%);
+                z-index: 25;
+            }
+    
+            img:nth-child(2) {
+                top: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 20;
+            }
+    
+            img:nth-child(3) {
+                top: 1.5rem;
+                left: 45%;
+                z-index: 15;
+            }
+        }
+    }
+}
+
+@media( max-width: 725px ) {
+    .tours__images {
+        margin-bottom: 0;
+
+        img {
+            width: 100%;
+            position: initial;
+            transform: translateX(0) !important;
+            margin-bottom: 2.5rem;
         }
     }
 }
