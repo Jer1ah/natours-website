@@ -84,6 +84,7 @@
     .tours {
         &__wrapper {
             flex-direction: column;
+            margin-top: 3rem;
         }
 
         &__info {
@@ -120,6 +121,10 @@
 }
 
 @media( max-width: 725px ) {
+    .tours__heading {
+        font-size: 2rem;
+    }
+
     .tours__images {
         margin-bottom: 0;
 

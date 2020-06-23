@@ -237,6 +237,7 @@ body {
 @media (max-width: 950px) {
   .tours__wrapper {
     flex-direction: column;
+    margin-top: 3rem;
   }
   .tours__info {
     width: 100%;
@@ -266,6 +267,10 @@ body {
   }
 }
 @media (max-width: 725px) {
+  .tours__heading {
+    font-size: 2rem;
+  }
+
   .tours__images {
     margin-bottom: 0;
   }
@@ -286,6 +291,13 @@ body {
   padding: 0.1rem;
 }
 
+/*-- media queries --*/
+@media (max-width: 1075px) {
+  .info {
+    height: auto;
+    clip-path: none;
+  }
+}
 .packages {
   background-color: #eee;
   padding: 0.1rem;
@@ -315,6 +327,20 @@ body {
   border-radius: 10rem;
 }
 
+/*-- media queries --*/
+@media (max-width: 1075px) {
+  .packages {
+    margin-top: 0;
+  }
+  .packages__heading {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 750px) {
+  .packages__heading {
+    font-size: 2rem;
+  }
+}
 .testimonials {
   position: relative;
   display: flex;
@@ -467,7 +493,9 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 60rem;
+  max-width: 95%;
   margin: 20rem auto 0;
   padding: 0;
   list-style: none;
@@ -508,15 +536,33 @@ body {
   transform: translateY(-0.75rem);
 }
 
+/*-- media queries --*/
+@media (max-width: 1075px) {
+  .info-card {
+    width: 47.5%;
+    margin-bottom: 2rem;
+  }
+
+  .info-card__list {
+    margin: 5rem auto 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .info-card {
+    width: 100%;
+  }
+}
 .packages__list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 4rem 0 5rem;
   list-style: none;
   padding: 0;
   width: 65rem;
+  max-width: 95%;
 }
 
 .package-card {
@@ -642,6 +688,19 @@ body {
   background: linear-gradient(120deg, #5643fa, #2998ff);
 }
 
+/*-- media queries --*/
+@media (max-width: 850px) {
+  .packages__list {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .package-card {
+    max-width: 100%;
+    width: 35rem !important;
+    margin-bottom: 2.5rem;
+  }
+}
 .contact-card {
   background: url("../../images/nature-image4.jpg");
   background-position: center;

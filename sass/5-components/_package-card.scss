@@ -1,9 +1,11 @@
 .packages__list {
-    @include displayFlex(row, flex-start, space-between);
+    @include displayFlex(row, center, space-between);
+    flex-wrap: wrap;
     margin: 4rem 0 5rem;
     list-style: none;
     padding: 0;
     width: 65rem;
+    max-width: 95%;
 }
 
 .package-card {
@@ -149,5 +151,20 @@
 
     .package-card__back {
         background: linear-gradient(120deg, $color-tertiary-dark, $color-tertiary-light);
+    }
+}
+
+
+/*-- media queries --*/
+@media( max-width: 850px ) {
+    .packages__list {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .package-card {
+        max-width: 100%;
+        width: 35rem !important;
+        margin-bottom: 2.5rem;
     }
 }

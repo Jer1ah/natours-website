@@ -1,6 +1,8 @@
 .info-card__list {
     @include displayFlex(row, flex-start, space-between);
+    flex-wrap: wrap;
     width: 60rem;
+    max-width: 95%;
     margin: 20rem auto 0;
     padding: 0;
     list-style: none;
@@ -39,5 +41,24 @@
     &:hover {
         cursor: pointer;
         transform: translateY(-.75rem);
+    }
+}
+
+
+/*-- media queries --*/
+@media( max-width: 1075px ) {
+    .info-card {
+        width: 47.5%;
+        margin-bottom: 2rem;
+    }
+
+    .info-card__list {
+        margin: 5rem auto 3rem;
+    }
+}
+
+@media( max-width: 750px ) {
+    .info-card {
+        width: 100%;
     }
 }
