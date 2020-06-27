@@ -4,15 +4,17 @@
         background-position: center;
         background-size: cover;
         width: 65rem;
+        max-width: 95%;
         height: 33rem;
         margin: 7.5rem 0;
         box-shadow: 0px 0px 12px 0px rgba(0,0,0,.5);
+        overflow: hidden;
     }
 
     &__info {
         background-color: rgba(255, 255, 255, .9);
         height: 100%;
-        width: 55%;
+        width: 35rem;
         @include displayFlex(column, flex-start, flex-start);
         clip-path: polygon(0 0, 100% 0, 82.5% 100%, 0% 100%);
         
@@ -95,3 +97,7 @@
         border-radius: 10rem;
     }
 }
+
+
+/*-- media queries --*/
+// @media( max-width:  ) {}
