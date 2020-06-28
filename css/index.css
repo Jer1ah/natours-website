@@ -23,7 +23,7 @@ body {
 .header {
   width: 100%;
   height: 95vh;
-  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../images/natours-bg.jpg");
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../images/natours-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -295,7 +295,7 @@ body {
 }
 .info {
   height: 55rem;
-  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../images/nature-image4.jpg");
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../images/nature-image4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
@@ -641,7 +641,7 @@ body {
   backface-visibility: hidden;
 }
 .package-card__front-header {
-  background: linear-gradient(#ffbb008c, #ffbb0083), url("../../images/nature-image2.jpg");
+  background: linear-gradient(#ffbb008c, #ffbb0083), url("../images/nature-image2.jpg");
   background-size: cover;
   background-position: center;
   height: 12rem;
@@ -724,7 +724,7 @@ body {
 }
 
 .two .package-card__front-header {
-  background: linear-gradient(rgba(126, 213, 111, 0.7), rgba(126, 213, 111, 0.7)), url("../../images/nature-image4.jpg");
+  background: linear-gradient(rgba(126, 213, 111, 0.7), rgba(126, 213, 111, 0.7)), url("../images/nature-image4.jpg");
 }
 .two .package-card__front-heading h3 {
   background-color: rgba(126, 213, 111, 0.9);
@@ -734,7 +734,7 @@ body {
 }
 
 .three .package-card__front-header {
-  background: linear-gradient(rgba(41, 152, 255, 0.7), rgba(41, 152, 255, 0.7)), url("../../images/nature-image1.jpg");
+  background: linear-gradient(rgba(41, 152, 255, 0.7), rgba(41, 152, 255, 0.7)), url("../images/nature-image1.jpg");
 }
 .three .package-card__front-heading h3 {
   background-color: rgba(41, 152, 255, 0.9);
@@ -757,7 +757,7 @@ body {
   }
 }
 .contact-card {
-  background: url("../../images/nature-image4.jpg");
+  background: url("../images/nature-image4.jpg");
   background-position: center;
   background-size: cover;
   width: 65rem;
