@@ -48,14 +48,17 @@
         visibility: hidden;
         transition: opacity .8s;
         opacity: 0;
+        display: inline-block;
     }
 
     &__listItem {
-        margin: 1.5rem 0;
-        padding: 1rem 3rem;
         background: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
         background-size: 220%;
         transition: all .33s;
+        width: 22rem;
+        margin: 1rem 0;
+        height: 4.5rem;
+        @include displayFlex(row, center, center);
 
         &:hover {
             background-position: 100%;
@@ -82,12 +85,12 @@
 /* media queries */
 @media( max-width: 850px ) {
     .navigation__button {
-        top: 3.1rem;
-        right: 3.3rem;
+        top: 2rem;
+        right: 2rem;
     }
 
     .navigation__background {
-        top: 3.75rem;
-        right: 3.5rem;
+        top: 2.7rem;
+        right: 2.2rem;
     }
 }

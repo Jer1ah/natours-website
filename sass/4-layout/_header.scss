@@ -63,6 +63,11 @@
 }
 
 @media( max-width: 850px ) {
+    .header__logo {
+        top: 1.75rem;
+        left: 1.75rem;
+    }
+
     .header__title {
         h1 {
             font-size: 3.4rem;

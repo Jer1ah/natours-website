@@ -6,6 +6,7 @@
 
 html {
   padding: 2rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +70,11 @@ body {
   }
 }
 @media (max-width: 850px) {
+  .header__logo {
+    top: 1.75rem;
+    left: 1.75rem;
+  }
+
   .header__title h1 {
     font-size: 3.4rem;
   }
@@ -121,13 +127,19 @@ body {
   visibility: hidden;
   transition: opacity 0.8s;
   opacity: 0;
+  display: inline-block;
 }
 .navigation__listItem {
-  margin: 1.5rem 0;
-  padding: 1rem 3rem;
   background: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all 0.33s;
+  width: 22rem;
+  margin: 1rem 0;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .navigation__listItem:hover {
   background-position: 100%;
@@ -149,13 +161,13 @@ body {
 /* media queries */
 @media (max-width: 850px) {
   .navigation__button {
-    top: 3.1rem;
-    right: 3.3rem;
+    top: 2rem;
+    right: 2rem;
   }
 
   .navigation__background {
-    top: 3.75rem;
-    right: 3.5rem;
+    top: 2.7rem;
+    right: 2.2rem;
   }
 }
 .tours {
@@ -911,6 +923,7 @@ body {
   border-radius: 10rem;
   border: none;
   margin-top: 2rem;
+  outline: none;
 }
 .popup-card__info button:hover {
   cursor: pointer;

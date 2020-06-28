@@ -51,3 +51,15 @@ const popupCardController = (function() {
         _popupCard.style.opacity = 0;
     });
 }());
+
+//prevent default functionality
+const preventDefaultController = (function() {
+    const _anchors = document.querySelectorAll("a");
+    for(let i = 0; i < _anchors.length; i++) {
+        _anchors[i].addEventListener("click", (event) => {
+            if( _anchors[i].classList[0] !== "header__button" ) {
+                event.preventDefault();
+            }
+        });
+    }
+}());
