@@ -840,5 +840,129 @@ body {
 }
 
 /*-- media queries --*/
+.popup-card {
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1500;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 67rem;
+  max-width: 95%;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.33s;
+}
+.popup-card__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+.popup-card__images img {
+  width: 100%;
+  height: 50%;
+}
+.popup-card__info {
+  width: 56%;
+  margin-left: 3rem;
+}
+.popup-card__info h2 {
+  background: -webkit-linear-gradient(120deg, #28b485, #7ed56f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+}
+.popup-card__info h4 {
+  color: #555;
+  font-size: 1.25rem;
+  margin: 1.25rem 0 1.25rem;
+}
+.popup-card__info-paragraphs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.popup-card__info-paragraphs p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5rem;
+}
+.popup-card__info-paragraphs p:first-child {
+  margin-right: 2rem;
+}
+.popup-card__info button {
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: #55c57a;
+  text-decoration: none;
+  padding: 0.9rem 2.75rem;
+  border-radius: 10rem;
+  border: none;
+  margin-top: 2rem;
+}
+.popup-card__info button:hover {
+  cursor: pointer;
+}
+.popup-card .close-icon {
+  width: 1rem;
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+}
+.popup-card .close-icon:hover {
+  cursor: pointer;
+}
+
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.33s;
+}
+
+/*-- media queries --*/
+@media (max-width: 915px) {
+  .popup-card {
+    flex-direction: column-reverse;
+  }
+  .popup-card__info {
+    width: 95%;
+    margin: 2rem 0 2rem;
+  }
+  .popup-card__images {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 695px) {
+  .popup-card__info-paragraphs {
+    flex-direction: column;
+  }
+  .popup-card__info-paragraphs p {
+    width: 100%;
+    margin: 0;
+  }
+  .popup-card__info-paragraphs p:first-child {
+    margin-bottom: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

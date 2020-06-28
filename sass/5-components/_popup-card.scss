@@ -1,0 +1,135 @@
+.popup-card {
+    position: fixed;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1500;
+    background-color: #fff;
+    @include displayFlex(row, center, flex-start);
+    width: 67rem;
+    max-width: 95%;
+    border-radius: .2rem;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .33s;
+
+    &__images {
+        @include displayFlex(column, center, center);
+        width: 35%;
+
+        img {
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    &__info {
+        width: 56%;
+        margin-left: 3rem;
+
+        h2 {
+            background: -webkit-linear-gradient(120deg, $color-primary-dark, $color-primary-light);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.75rem;
+            letter-spacing: .1rem;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.25rem;
+            margin: 1.25rem 0 1.25rem;
+        }
+
+        &-paragraphs {
+            @include displayFlex(row, flex-start, space-between);
+
+            p {
+                font-size: .85rem;
+                color: #666;
+                line-height: 1.5rem;
+
+                &:first-child {
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        button {
+            color: $color-white;
+            font-size: .9rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            background-color: $color-primary;
+            text-decoration: none;
+            padding: .9rem 2.75rem;
+            border-radius: 10rem;
+            border: none;
+            margin-top: 2rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .close-icon {
+        width: 1rem;
+        position: absolute;
+        top: 1.75rem;
+        right: 1.75rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.popup-overlay {
+    background-color: rgba(0,0,0,.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1200;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .33s;
+}
+
+
+/*-- media queries --*/
+@media( max-width: 915px ) {
+    .popup-card {
+        flex-direction: column-reverse;
+
+        &__info {
+            width: 95%;
+            margin: 2rem 0 2rem;
+        }
+
+        &__images {
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+}
+
+@media( max-width: 695px ) {
+    .popup-card {
+        &__info-paragraphs {
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                margin: 0;
+
+                &:first-child {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
