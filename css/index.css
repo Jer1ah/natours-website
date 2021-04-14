@@ -565,6 +565,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   width: 21%;
   transition: all 0.3s;
+  height: 19rem;
 }
 .info-card__icon {
   font-size: 3rem;
@@ -583,7 +584,7 @@ body {
   font-size: 0.9rem;
   color: #777;
   width: 90%;
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 0;
   line-height: 1.5rem;
 }
 .info-card:hover {
@@ -596,6 +597,7 @@ body {
   .info-card {
     width: 47.5%;
     margin-bottom: 2rem;
+    height: 15.5rem;
   }
 
   .info-card__list {
@@ -605,6 +607,10 @@ body {
 @media (max-width: 750px) {
   .info-card {
     width: 100%;
+    height: auto;
+  }
+  .info-card p {
+    margin-bottom: 2.25rem;
   }
 }
 .packages__list {
@@ -849,6 +855,14 @@ body {
   font-size: 1.1rem;
   padding: 0.8rem 3rem;
   border-radius: 10rem;
+}
+.contact h5 {
+  margin-left: 3.25rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #28b485;
+  opacity: 0;
+  transition: all 0.35s;
 }
 
 /*-- media queries --*/

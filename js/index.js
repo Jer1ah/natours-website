@@ -52,7 +52,7 @@ const popupCardController = (function() {
     });
 }());
 
-//prevent default functionality
+// prevent default functionality
 const preventDefaultController = (function() {
     const _anchors = document.querySelectorAll("a");
     for(let i = 0; i < _anchors.length; i++) {
@@ -63,3 +63,17 @@ const preventDefaultController = (function() {
         });
     }
 }());
+
+// booking card functionality
+const bookingCardController = (() => {
+    const _submitButton = document.querySelector('.contact-button');
+    const _submitTitle = document.querySelector('.contact h5');
+
+    _submitButton.addEventListener('click', () => {
+        _submitTitle.style.opacity = "1";
+
+        window.setTimeout(() => {
+            _submitTitle.style.opacity = "0";
+        }, 3500);
+    });
+})();
